@@ -19,6 +19,7 @@
             <param name="ios-package" value="PowerSaveMode" />
          </feature>
       </config-file>
+      <header-file src="src/ios/PowerSaveMode.h" />
       <source-file src="src/ios/PowerSaveMode.m" />
    </platform>
 </plugin>
