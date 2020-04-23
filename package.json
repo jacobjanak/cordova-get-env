@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-powersavemode",
+  "version": "0.1.0",
+  "description": "Lean plugin to check if device is in power save mode",
+  "cordova": {
+    "id": "cordova-plugin-powersavemode",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Level51",
+  "license": "MIT"
+}

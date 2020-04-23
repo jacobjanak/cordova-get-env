@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-powersavemode" version="0.1.0">
+   <name>PowerSaveMode</name>
+   <js-module name="PowerSaveMode" src="www/PowerSaveMode.js">
+      <clobbers target="cordova.plugins.PowerSaveMode" />
+   </js-module>
+   <platform name="android">
+      <config-file parent="/*" target="res/xml/config.xml">
+         <feature name="PowerSaveMode">
+            <param name="android-package" value="PowerSaveMode.PowerSaveMode" />
+         </feature>
+      </config-file>
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/PowerSaveMode.java" target-dir="src/cordova-plugin-powersavemode/PowerSaveMode" />
+   </platform>
+   <platform name="ios">
+      <config-file parent="/*" target="config.xml">
+         <feature name="PowerSaveMode">
+            <param name="ios-package" value="PowerSaveMode" />
+         </feature>
+      </config-file>
+      <source-file src="src/ios/PowerSaveMode.m" />
+   </platform>
+</plugin>
