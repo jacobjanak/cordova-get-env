@@ -1,4 +1,4 @@
-package PowerSaveMode;
+package de.lvl51.powersavemode;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
