@@ -88,7 +88,7 @@ public class PowerSaveMode extends CordovaPlugin {
 		callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, result));
 	}
 
-	private void isIgnoringBatteryOptimizations(CallbackContext callbackContext, string packageName) {
+	private void isIgnoringBatteryOptimizations(CallbackContext callbackContext, String packageName) {
 		PowerManager powerManager = (PowerManager) cordova.getActivity().getSystemService(Context.POWER_SERVICE);
 
 		boolean result;
