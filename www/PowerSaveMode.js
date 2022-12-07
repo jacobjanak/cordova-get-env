@@ -12,8 +12,8 @@ exports.isDeviceIdleMode = function(success, error) {
   exec(success, error, 'PowerSaveMode', 'isDeviceIdleMode');
 };
 
-exports.isIgnoringBatteryOptimizations = function(success, error) {
-  exec(success, error, 'PowerSaveMode', 'isIgnoringBatteryOptimizations');
+exports.isIgnoringBatteryOptimizations = function(packageName, success, error) {
+  exec(success, error, 'PowerSaveMode', 'isIgnoringBatteryOptimizations', [packageName]);
 };
 
 exports.isInteractive = function(success, error) {

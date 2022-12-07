@@ -21,6 +21,31 @@ public class PowerSaveMode extends CordovaPlugin {
           return true;
         }
 
+        if (action.equals("getLocationPowerSaveMode")) {
+		  this.getLocationPowerSaveMode(callbackContext);
+		  return true;
+		}
+
+		if (action.equals("isDeviceIdleMode")) {
+		  this.isDeviceIdleMode(callbackContext);
+		  return true;
+		}
+
+		if (action.equals("isIgnoringBatteryOptimizations")) {
+		  this.isIgnoringBatteryOptimizations(callbackContext, args.getString(0));
+		  return true;
+		}
+
+		if (action.equals("isInteractive")) {
+		  this.isInteractive(callbackContext);
+		  return true;
+		}
+
+		if (action.equals("getAppStandbyBucket")) {
+		  this.getAppStandbyBucket(callbackContext);
+		  return true;
+		}
+
         return false;
     }
 
@@ -63,12 +88,12 @@ public class PowerSaveMode extends CordovaPlugin {
 		callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, result));
 	}
 
-	private void isIgnoringBatteryOptimizations(CallbackContext callbackContext) {
+	private void isIgnoringBatteryOptimizations(CallbackContext callbackContext, string packageName) {
 		PowerManager powerManager = (PowerManager) cordova.getActivity().getSystemService(Context.POWER_SERVICE);
 
 		boolean result;
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-		  result = powerManager.isIgnoringBatteryOptimizations();
+		  result = powerManager.isIgnoringBatteryOptimizations(packageName);
 		} else {
 		  result = false;
 		}
@@ -96,7 +121,7 @@ public class PowerSaveMode extends CordovaPlugin {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
 		  result = usageStatsManager.getAppStandbyBucket();
 		} else {
-		  result = false;
+		  result = -1;
 		}
 
 		callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, result));
