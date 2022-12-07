@@ -10,7 +10,7 @@ import org.json.JSONException;
 import android.content.Context;
 import android.os.Build;
 import android.os.PowerManager;
-import android.os.UsageStatsManager;
+import android.app.usage.UsageStatsManager;
 
 public class PowerSaveMode extends CordovaPlugin {
 
