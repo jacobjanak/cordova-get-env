@@ -1,5 +1,5 @@
 var exec = require('cordova/exec');
 
-exports.getEnv = function(success, error) {
-  exec(success, error, 'GetEnv', 'getEnv');
+exports.getEnv = function(variableName, success, error) {
+  exec(success, error, 'GetEnv', 'getEnv', [variableName]);
 };
