@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-get-env" version="0.1.0">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-get-env" version="0.1.0">
    <name>GetEnv</name>
    <js-module name="GetEnv" src="www/GetEnv.js">
       <clobbers target="cordova.plugins.GetEnv" />
@@ -11,6 +11,6 @@
          </feature>
       </config-file>
       <config-file parent="/*" target="AndroidManifest.xml" />
-      <source-file src="src/android/GetEnv.java" target-dir="src/cordova-get-env/GetEnv" />
+      <source-file src="src/android/GetEnv.java" target-dir="src/cordova-plugin-get-env/GetEnv" />
    </platform>
 </plugin>

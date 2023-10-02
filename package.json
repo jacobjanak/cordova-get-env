@@ -1,9 +1,9 @@
 {
-  "name": "cordova-get-env",
+  "name": "cordova-plugin-get-env",
   "version": "0.0.1",
   "description": "Lean plugin to read environment variables",
   "cordova": {
-    "id": "cordova-get-env",
+    "id": "cordova-plugin-get-env",
     "platforms": [
       "android"
     ]
