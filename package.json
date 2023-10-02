@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-powersavemode",
-  "version": "0.2.1",
-  "description": "Lean plugin to check if device is in power save mode",
+  "name": "cordova-get-env",
+  "version": "0.0.1",
+  "description": "Lean plugin to read environment variables",
   "cordova": {
-    "id": "cordova-plugin-powersavemode",
+    "id": "cordova-get-env",
     "platforms": [
       "android"
     ]
@@ -12,6 +12,6 @@
     "ecosystem:cordova",
     "cordova-android"
   ],
-  "author": "Level51",
+  "author": "Jacob Janak",
   "license": "MIT"
 }
