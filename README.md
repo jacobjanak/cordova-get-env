@@ -19,7 +19,7 @@ To read the value of an Android environment variable:
 
 ```javascript
 // Get an environment variable
-cordova.plugins.GetEnv.getEnv('ANDROID_HOME', (result) => {
-    console.log('ANDROID_HOME: ' + value);
+cordova.plugins.GetEnv.getEnv('ANDROID_HOME', value => {
+    console.log('ANDROID_HOME:', value);
 });
 ```
