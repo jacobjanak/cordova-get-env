@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-get-env",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Lean plugin to read environment variables",
   "repository": {
     "type": "git",
